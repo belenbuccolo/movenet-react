@@ -1,11 +1,11 @@
 .video {
-  /* position: absolute;
+  position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
   text-align: center;
   z-index: 9;
   width: 640;
-  height: 480; */
+  height: 480;
   transform: scale(-1, 1);
 }

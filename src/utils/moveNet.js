@@ -21,3 +21,13 @@ export async function estimatePose(video, detector) {
   }
   return pose;
 }
+
+export const flattenKeypoints = (keypoints) => {
+  const flattenedKeypoints = [];
+  for (let i = 0; i < keypoints.length; i++) {
+    flattenedKeypoints.push(keypoints[i]["y"]);
+    flattenedKeypoints.push(keypoints[i]["x"]);
+    flattenedKeypoints.push(keypoints[i]["score"]);
+  }
+  return flattenedKeypoints;
+};

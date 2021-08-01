@@ -16,6 +16,7 @@ const useWebcam = () => {
   };
 
   const stopVideo = (video) => {
+    setVideoLoaded(false);
     const stream = video.current.srcObject;
     const tracks = stream.getTracks();
 
