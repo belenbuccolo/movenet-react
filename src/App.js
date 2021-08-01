@@ -12,9 +12,7 @@ function App() {
         <div>
           <Link to="/home">Home</Link>
         </div>
-        <div>
-          <Link to="/train">Train Model</Link>
-        </div>
+        <div>{/* <Link to="/train">Train Model</Link> */}</div>
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/train" component={Train} />
