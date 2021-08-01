@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 
-import * as tf from "@tensorflow/tfjs";
 import "@tensorflow/tfjs-backend-webgl";
 
 import { createDetector, estimatePose } from "../../utils/moveNet";
@@ -24,18 +23,6 @@ const Home = () => {
   const { drawFrameOnCanvas, clearCanvas, canvasContext } = useCanvas(canvasRef);
   const { playVideo, stopVideo, video, videoLoaded, setVideoLoaded } =
     useWebcam(videoRef);
-
-  // const loadTmModel = async () => {
-  //   const model = await tf.loadLayersModel("/my_model/model.json");
-  //   console.log("model", model);
-  //   return model;
-  // };
-
-  // useEffect(() => {
-  //   console.log("use effect");
-  //   const model = loadTmModel();
-  //   console.log("modelll", model);
-  // }, []);
 
   const loadMoveNet = async () => {
     detector = await createDetector();
@@ -84,7 +71,7 @@ const Home = () => {
 
   return (
     <div>
-      <title>Video</title>
+      <h1>Home</h1>
       <button onClick={start}>Start</button>
       {videoLoaded && <button onClick={stop}>Stop</button>}
       {moveNetLoaded && <button onClick={draw}>Start drawing</button>}

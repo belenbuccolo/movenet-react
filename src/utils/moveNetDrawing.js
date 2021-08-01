@@ -18,7 +18,6 @@ const model = poseDetection.SupportedModels.MoveNet;
 // };
 
 export const drawPose = (pose, canvasContext) => {
-  console.log("draw pose", pose);
   if (pose.keypoints != null) {
     drawKeypoints(pose.keypoints, canvasContext);
     drawSkeleton(pose.keypoints, canvasContext);

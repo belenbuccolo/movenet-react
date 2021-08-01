@@ -3,6 +3,16 @@ const useCanvas = (canvasRef) => {
 
   let canvasContext = canvasRef.current?.getContext("2d") || null;
 
+  // const captureFrame = (video) => {
+  //   canvasContext.drawImage(video, 0, 0, 640, 480);
+  //   let img = null;
+  //   canvasRef.toBlob((blob) => {
+  //     img = new Image();
+  //     img.src = window.URL.createObjectUrl(blob);
+  //   });
+  //   return img;
+  // };
+
   // https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
   // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
   // Draws video frame on canvas

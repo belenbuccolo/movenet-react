@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import Home from "./views/Home";
-// import Train from "./views/Train";
+import Train from "./views/Train";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/home" component={Home} />
-          {/* <Route path="/train" component={Train} /> */}
+          <Route path="/train" component={Train} />
         </Switch>
       </div>
     </BrowserRouter>
