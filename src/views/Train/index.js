@@ -54,7 +54,7 @@ const Train = () => {
         // tf.layers.flatten({ inputShape: (1, 51) }),
         // Layer 1.
         tf.layers.dense({
-          inputShape: controllerDataset.xs.shape,
+          inputShape: (10200, 1),
           units: 100,
           activation: "relu",
           kernelInitializer: "varianceScaling",
