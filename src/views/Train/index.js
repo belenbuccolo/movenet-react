@@ -10,6 +10,11 @@ import useWebcam from "../../hooks/useWebcam";
 import useCanvas from "../../hooks/useCanvas";
 import S from "./style.module.css";
 
+/* 
+
+
+*/
+
 // The number of classes we want to predict. Up and down
 const NUM_CLASSES = 2;
 
@@ -54,7 +59,7 @@ const Train = () => {
         // tf.layers.flatten({ inputShape: (1, 51) }),
         // Layer 1.
         tf.layers.dense({
-          inputShape: (10200, 1),
+          inputShape: [[10200]],
           units: 100,
           activation: "relu",
           kernelInitializer: "varianceScaling",
