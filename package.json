@@ -4,6 +4,7 @@
   "publishConfig": {
     "@belenbuccolo:registry": "https://npm.pkg.github.com"
   },
+  "main": "src/index.js",
   "dependencies": {
     "@mediapipe/pose": "^0.4.1627343400",
     "@tensorflow-models/pose-detection": "^0.0.4",
