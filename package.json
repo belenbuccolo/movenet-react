@@ -2,6 +2,9 @@
   "name": "movenet-react",
   "version": "0.1.0",
   "private": true,
+  "publishConfig": {
+    "@belenbuccolo:registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@mediapipe/pose": "^0.4.1627343400",
     "@tensorflow-models/pose-detection": "^0.0.4",
