@@ -1,6 +1,6 @@
 {
   "name": "@belenbuccolo/movenet-react",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publishConfig": {
     "@belenbuccolo:registry": "https://npm.pkg.github.com"
   },
